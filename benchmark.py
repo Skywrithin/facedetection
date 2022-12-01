@@ -9,6 +9,7 @@ def benchmark(num_times):
     call face_cascade.detectMultiScale 'num_times' number of times 
     and return the execution time
     """
+
     start = time.clock_gettime(time.CLOCK_REALTIME)
     # Load the cascade
     face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
