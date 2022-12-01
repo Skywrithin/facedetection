@@ -33,12 +33,8 @@ def benchmark(num_times):
 
 if __name__ == '__main__':
     import sys
-
+    
     num_times = int(sys.argv[1])
     (overhead_time,face_detect_time) = benchmark(num_times)
     print("overhead_time to load classifier and image -> %f seconds" % overhead_time)
-    print("time to do %d face detections -> %f seconds" % (num_times,face_detect_time)) 
- 
-
-
-
+    print("time to do %d face detections -> %f seconds" % (num_times,face_detect_time))
